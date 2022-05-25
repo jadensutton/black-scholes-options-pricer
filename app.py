@@ -31,7 +31,7 @@ def black_scholes(type: str, spot: float, strike: float, risk_free_rate: float, 
     if type == 'C':
         value = spot * norm.cdf(d1, 0, 1) - strike * np.exp(-risk_free_rate * time_to_exp) * norm.cdf(d2, 0, 1)
     elif type == 'P':
-        value = spot * np.exp(-risk_free_rate * time_to_exp) * norm.cdf(-d2, 0, 1) - spot * norm.cdf(-d1, 0, 1)
+        value = strike * np.exp(-risk_free_rate * time_to_exp) * norm.cdf(-d2, 0, 1) - spot * norm.cdf(-d1, 0, 1)
 
     return round(value, 2)
 
