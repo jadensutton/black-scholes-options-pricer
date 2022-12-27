@@ -80,7 +80,7 @@ function App() {
                 </Container>
             </Navbar>
             <div className='d-flex align-items-center justify-content-center'
-            style={{minHeight: '130vh'}}
+            style={{minHeight: '130vh', marginTop: '50px'}}
             >
                 <div className='w-100 d-flex align-items-center justify-content-center'>        
                     <div style={{minWidth: '600px', marginBottom: '50px'}}>
@@ -136,7 +136,7 @@ function App() {
                             </Card.Body>
                         </Card>
                         
-                        {heatmap_data.length ? <h5 className='text-center mb-4 mt-4'>Heat Map</h5> : null}
+                        {heatmap_data.length ? <h5 className='text-center mb-4 mt-4'>Option Value vs. Underlying Price/Time-to-Maturity</h5> : null}
                         <Heatmap
                             height={250}
                             width={'100%'}
