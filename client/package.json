@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://black-scholes-options-pricer.herokuapp.com/",  
+  "proxy": "http://127.0.0.1:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -13,6 +13,7 @@
     "react-bootstrap": "^2.2.2",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.0",
+    "reaviz": "^13.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
