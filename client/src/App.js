@@ -136,7 +136,7 @@ function App() {
                             </Card.Body>
                         </Card>
                         
-                        {heatmap_data.length ? <h5 className='text-center mb-4 mt-4'>Option Value vs. Underlying Price/Time-to-Maturity</h5> : null}
+                        {heatmap_data.length ? <h5 className='text-center mb-4 mt-4'>Option Value vs. Underlying Price/Date</h5> : null}
                         <Heatmap
                             height={250}
                             width={'100%'}
